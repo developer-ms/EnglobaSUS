@@ -7,9 +7,22 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'sign-in',
+    loadChildren: () => import('./authentication/sign-in/sign-in.module').then( m => m.SignInPageModule)
+  },
+  {
+    path: 'sign-up',
+    loadChildren: () => import('./authentication/sign-up/sign-up.module').then( m => m.SignUpPageModule)
+  },
+
+  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'sign-in',
     pathMatch: 'full'
+  },
+  {
+    path: 'sign-in',
+    loadChildren: () => import('./authentication/sign-in/sign-in.module').then( m => m.SignInPageModule)
   },
 ];
 
