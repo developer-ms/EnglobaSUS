@@ -1,5 +1,7 @@
 {
   "name": "englobaSus",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,44 +1,3 @@
-<ion-menu side="start" content-id="main-content">
-  <ion-header>
-    <ion-toolbar translucent>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-no-padding">
-    <div class="blue">
-    <ion-list class="ion-no-padding">
-      <ion-item>
-        <ion-avatar slot="start">
-          <img src="http://simpleicon.com/wp-content/uploads/nurse1.png">
-        </ion-avatar>
-        <ion-label>
-          <h1>Ana Paula</h1>
-          <p>SUS:123456789</p>
-          <p>Localização: Sorocaba</p>
-        </ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="calendar" slot="start"></ion-icon>
-        <ion-label>Consultas</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="folder" slot="start"></ion-icon>
-        <ion-label>Prontuário</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="document-text" slot="start"></ion-icon>
-        <ion-label>Exames</ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-icon name="settings" slot="start"></ion-icon>
-        <ion-label>Configurações</ion-label>
-      </ion-item>
-     </ion-list>
-  </div>
-  </ion-content>
-</ion-menu>
-
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -50,68 +9,70 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
+  <div>
+    <app-chart></app-chart>
+  </div>
 
-
-
-<ion-router-outlet id="main-content">
-  <ion-content>
-    <ion-infinite-scroll></ion-infinite-scroll>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
-      </ion-card-header>
-
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
+  <div>
+    <ion-list>
+      <ion-card>
+      <ion-item color="sus">
+        <div class="row">
+          <div class="col-3">
+              <img src="../../assets/img/Agenda Icone.png">
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <h2>Consultas</h2>
+            </div>
+            <div class="row">
+              <p>Agende, confira e monitore suas consultas</p>
+            </div>
+          </div>
+        </div>
+      </ion-item>
     </ion-card>
     <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
-      </ion-card-header>
-
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
+      <ion-item color="sus">
+        <div class="row">
+          <div class="col-3">
+              <img src="../../assets/img/Prontuario Icone.png">
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <h2>Protuário</h2>
+            </div>
+            <div class="row">
+              <p>Confira todas as medidas realizadas pelo seu médico</p>
+            </div>
+          </div>
+        </div>
+      </ion-item>
     </ion-card>
     <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
-      </ion-card-header>
-
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
+      <ion-item color="sus">
+        <div class="row">
+          <div class="col-3">
+              <img src="../../assets/img/Exame Icone.png">
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <h2>Exames</h2>
+            </div>
+            <div class="row">
+              <p>Agende e visualize os resultados dos seus exames</p>
+            </div>
+          </div>
+        </div>
+      </ion-item>
     </ion-card>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
-      </ion-card-header>
 
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
-    </ion-card>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
-      </ion-card-header>
+    <ion-infinite-scroll>
+    </ion-infinite-scroll>
+    </ion-list>
+  </div>
+</ion-content>
 
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
-    </ion-card>
-  </ion-content>
-</ion-router-outlet>
 
 

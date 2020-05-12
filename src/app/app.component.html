@@ -1,3 +1,49 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" contentId="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-no-padding">
+      <div class="blue">
+      <ion-list class="ion-no-padding">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="http://simpleicon.com/wp-content/uploads/nurse1.png">
+          </ion-avatar>
+          <ion-label>
+            <h1>Ana Paula</h1>
+            <p>SUS:123456789</p>
+            <p>Localização: Sorocaba</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-menu-toggle auto-hide="true">
+          <ion-item routerLink="/home" routerDirection="forward">
+            <ion-icon name="home" slot="start"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-item>
+          <ion-item routerLink="/sign-up" routerDirection="forward">
+            <ion-icon name="calendar" slot="start"></ion-icon>
+            <ion-label>Consultas</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="folder" slot="start"></ion-icon>
+            <ion-label>Prontuário</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="document-text" slot="start"></ion-icon>
+            <ion-label>Exames</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="settings" slot="start"></ion-icon>
+            <ion-label>Configurações</ion-label>
+          </ion-item>
+      </ion-menu-toggle>
+       </ion-list>
+    </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content" main></ion-router-outlet>
 </ion-app>
